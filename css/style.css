@@ -179,6 +179,125 @@ div.float_right img{
 }
 
 
+div.flexOne div,
+div.flexTwo div,
+div.flexThree div,
+div.flexFour div{
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+div.flexOne, div.flexTwo, div.flexThree, div.flexFour{
+	display: flex;
+}
+
+div.flexOne div{
+	flex: 1;
+	/*
+	flex: flex-grow flex-shrink flex-basis 
+	flex: 1 = flex: 1 1 0;
+	*/
+}
+
+/*flex-basis => length of flexible item */
+div.flexTwo div:nth-child(3){
+	flex-basis: 200px;
+}
+
+/*flex-grow => item will grow to the rest of flexible item */
+div.flexThree div:nth-child(2){
+	flex-grow: 3;
+}
+
+/*flex-direction => row | row-reverse | column | column-reverse */
+div.flexFour{
+	flex-direction: row-reverse;
+}
+
+
+div.gridOne div,
+div.gridTwo div,
+div.gridThree div,
+div.gridFour div,
+div.gridFive div{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+div.gridOne,
+div.gridTwo,
+div.gridThree,
+div.gridFour,
+div.gridFive{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+div.gridTwo{
+	grid-column-gap: 50px;
+}
+
+div.gridThree{
+	grid-row-gap: 10px;
+}
+
+div.gridFour{
+	grid-gap: 20px;
+}
+
+div.column_one{
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+div#firstElement, div#secondElement, div#thirdElement{
+	width: 500px;
+	border: 2px solid orange;
+}
+
+#count{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	background-color: pink;
+	border-radius: 50%;
+
+	position: relative;
+	left: 30px;
+}
+
+
+#countOne{
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	background-color: darkred;
+
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+
+div#thirdElement{
+	position: fixed;
+	top: 10px;
+	right: 100px;
+}
+
+
+
+
+
+
+
 
 
 
