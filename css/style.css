@@ -67,6 +67,126 @@ p>a{
 	text-transform: uppercase;
 }
 
+/*Pseudo Selector*/
+a.lessonClick:link{
+	text-decoration: none;
+}
+
+a.lessonClick:hover{
+	background-color: black;
+	color: white;
+}
+
+a.lessonClick:active{
+	background-color: #880E4F;
+	color: white;
+}
+
+a.lessonClick:visited{
+	background-color: #FFFF00;
+	color: #1B5E20;
+}
+
+:target{
+	background-color: skyblue;
+	border: 2px solid black;
+}
+
+form{
+	width: 80%;
+	margin: auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea{
+	width: 100%;
+	border: 3px solid #ccc;
+	outline: none;
+}
+
+div#dob_select select{
+	width: 30%;
+	outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+	border: 3px solid #555;
+}
+
+
+input[type="radio"]:checked+label{
+	color: red;
+}
+
+input[type="checkbox"]:checked+label{
+	color: red !important;
+}
+
+input[type="checkbox"]:enabled+label{
+	color: #607D8B;
+}
+
+input[type="checkbox"]:disabled+label{
+	color: #aaa;
+}
+
+input[type="text"]:read-only{
+	border: 0;
+	box-shadow: none;
+	background-color: silver;
+}
+
+input[type="text"]:read-write{
+	background-color: pink;
+}
+p:empty{
+	width: 100%;
+	height: 40px;
+	background-color: #607D8B;
+}
+
+li:first-child{
+	background-color: yellow;
+}
+
+li:last-child{
+	background-color: #00BCD4;
+}
+
+li:nth-child(3){
+	background-color: #009688;
+}
+
+li:nth-child(5){
+	background-color: skyblue;
+}
+
+div.float_left img{
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+div.float_right img{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
