@@ -1,0 +1,97 @@
+Create Folder
+---------------
+	xampp / htdocs /
+	eg - xampp/htdocs/batch19/php
+
+====================================================================================
+Run
+----
+	localhost/foldername
+	eg localhost/batch19/php/lesson1.php
+
+====================================================================================
+Variable
+---------
+	-	No Space
+	-	No Special Characters ( Shift + 1 to 0 )
+	-	/ \ ? . < > = ~ ` ' " { ( [ | ; : ,
+	-	Can't be a number on first Character
+		$1name ( wrong )
+		$name1 ( correct )
+
+	-	Case Sensitive
+		$function ( wrong )
+		$class ( wrong )
+
+====================================================================================
+Trim
+-----
+	trim(string)
+	- remove space the beginning and ending of a string
+
+====================================================================================
+     
+Strlen
+------
+	strlen(string)
+	-	string length
+
+====================================================================================
+
+Strcasecmp
+------------
+	strcasecmp(string1, string2)
+	- compare two strings
+
+	Result =>
+	0	-	if the two strings are equal
+	<0	-	if string1 is less than string2
+	>0	-	if string1 is greater than string2
+
+====================================================================================
+
+Change Capital Letter / Small Letter
+------------------------------------
+	strtolower(string)
+	- convert small letter
+
+	strtoupper(string)
+	- convert capital letter
+
+====================================================================================
+
+Substring
+----------
+	substr(string1, start_number)
+	-	parts of a string, beginning at the character of a specified position
+
+====================================================================================
+
+
+Str_replace
+-----------
+	str_replace(find, replace, string)
+	- string replace
+
+====================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
