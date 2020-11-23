@@ -62,7 +62,7 @@ Change Capital Letter / Small Letter
 
 Substring
 ----------
-	substr(string1, start_number)
+	substr(string, start_number)
 	-	parts of a string, beginning at the character of a specified position
 
 ====================================================================================
