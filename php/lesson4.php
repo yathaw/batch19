@@ -27,7 +27,18 @@
 		echo "Student : $b <br>";
 		$b++;
 	}
-	while ($b <= 5)
+	while ($b <= 5);
+
+	echo "<hr>";
+	
+	echo "<h1> Foreach </h1>";
+
+	$fruits = array("apple", "orange", "grape", "pineapple");
+
+
+	foreach ($fruits as $fruit) {
+		echo "$fruit <br>";
+	}
 
 
 
@@ -40,5 +51,18 @@
 
 
 
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
