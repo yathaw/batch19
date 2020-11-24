@@ -76,6 +76,62 @@ Str_replace
 ====================================================================================
 
 
+Comparison Operators
+--------------------
+-	greater than			>
+-	less than				<
+-	greater than and equal	>=
+-	less than and equal		<=
+-	not equal				!=
+-	not equal value or type	!==
+-	equal to 				==
+-	equal to and same type	===
+
+====================================================================================
+
+Logical Operators
+-----------------
+-	or 				||
+-	and				&&
+-	not				!
+
+====================================================================================
+
+Statements
+-----------
+-	If 								[ One condition ]
+-	If...else 						[ Two conditions ]						
+-	If...elseif...elseif...else 	[ Multiple conditions ]
+-	Switch							[ Multiple conditions ]
+
+====================================================================================
+
+Looping
+---------
+-	For
+-	While
+-	Do...while
+-	Foreach
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
