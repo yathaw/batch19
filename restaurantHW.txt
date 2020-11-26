@@ -1,0 +1,31 @@
+JSON File READ WRITE & Localstorage
+-------------------------------------
+
+sushi_restaurant
+	-	css				=>	Bootstrap
+	-	js 				=>	Bootstrap
+	-	photo			=>	sushi ဓာတ်ပုံသိမ်းဖို့
+
+	-	menulist.json 	
+
+	-	menu.php		
+			=>	jsonfilereadwrite တုန်းက index.php ရဲ့ form ပုံစံမျိုး
+			=>	Form input data တွေက
+					photo, name, price	
+
+	-	addmenu.php
+	-	updatemenu.php
+	-	deletemenu.php
+
+	-	header.php
+	-	footer.php
+
+	-	index.php		
+			=>	header.php နဲ့ footer.php နဲ့ချိတ်
+			=>	menu တွေကို card လေးနဲ့ပြမယ်
+			=>	menu တွေကို menulist.json ကနေ ဆွဲထုတ်ပြီး loop ပတ်ရမယ် 
+			=>	Add Menu ဆိုပြီး button လေးထားမယ်
+			=>	Add Menu လေးနှိပ်ရင် menu.php ကိုညွန်းမယ်
+			=>	localstorage အပိုင်းရေးမယ်
+
+	-	localstorage.js
