@@ -33,7 +33,7 @@
 
 	// convert into array from json
 
-	$data_arr = json_decode($jsonData);
+	$data_arr = json_decode($jsonData, true);
 
 	array_push($data_arr, $student);
 
