@@ -1,0 +1,92 @@
+Home Apperance
+
+
+1. ITEM001	Pillow	3000	
+2. ITEM002	Blanket	10000
+==================================
+
+Stationary 
+
+
+1. ITEM001	Pen				100
+2. ITEM002	Pencil			150
+
+
+1. ITEM003	A4 Paper		12000
+2. ITEM004	Unicolor Book	200	
+===================================
+
+Cosmetic
+
+1. ITEM001	Sai Sai LipStick One	12000
+2. ITEM002	Sai Sai LipStick Two	12000
+3. ITEM003	Ni Ni Khin Zaw Red LipStick	One	10000
+4. ITEM004	Ni Ni Khin Zaw Red LipStick	Two	10000
+
+
+1. ITEM003	Sai Sai Facemask		12000
+2. ITEM004	Sai Sai Makeup			12000
+
+
+=================================== =================================== ===================================
+
+categories
+- id, name, logo		(Home Apperance, Stationary, Cosmetic, Toys)
+
+subcategories
+- id, name, category_id		(lipstick, facemask, makeup => cosmetic)
+
+brands
+- id, name, photo		(Sai Sai, Ni Ni Khin Zaw)
+
+items
+- id, codeno, name, price, discount, photo, description
+	brand_id, subcategory_id
+
+orders
+- id, voucherno, total, note, orderdate, status
+
+item_order
+- id, item_id, order_id, qty
+
+users
+- id, name, phone, address, email, password
+
+roles
+- id, name (admin, customer)
+
+model_has_roles
+- id, user_id, role_id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
