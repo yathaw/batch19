@@ -46,13 +46,19 @@
                                 <td> <?= $i++; ?>. </td>
                                 <td> <?= $name; ?> </td>
                                 <td>
-                                    <a href="" class="btn btn-warning">
+                                    <a href="category_edit.php?id=<?= $cid ?>" class="btn btn-warning">
                                         <i class="icofont-ui-settings"></i>
                                     </a>
 
-                                    <a href="" class="btn btn-outline-danger">
-                                        <i class="icofont-close"></i>
-                                    </a>
+                                    <form action="category_delete.php" onsubmit="return confirm('Are you sure want to delete?')" method="POST" class="d-inline-block">
+                                        <input type="hidden" name="id" value="<?= $cid ?>">
+
+                                        <button class="btn btn-outline-danger">
+                                            <i class="icofont-close"></i>
+                                        </button>
+
+                                    </form>
+
                                 </td>
                             </tr>
 

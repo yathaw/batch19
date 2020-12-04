@@ -51,7 +51,7 @@
                                 <td> <?= $name; ?> </td>
                                 <td> <?= $cname; ?> </td>
                                 <td>
-                                    <a href="" class="btn btn-warning">
+                                    <a href="subcategory_edit.php?id=<?= $id; ?>" class="btn btn-warning">
                                         <i class="icofont-ui-settings"></i>
                                     </a>
 
