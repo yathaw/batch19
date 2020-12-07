@@ -30,7 +30,22 @@
 
 				<?php } unset($_SESSION['regsuccess']); ?>
 
-				<form action="signin" method="POST">
+				<?php 
+					if(isset($_SESSION['login_fail'])){
+				?>
+				<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				  	<h2>  🚨 Oops! </h2>
+				  	<hr>
+				  	<p> <?= $_SESSION['login_fail']; ?> </p>
+
+				  	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    	<span aria-hidden="true">&times;</span>
+				  	</button>
+				</div>
+
+				<?php } unset($_SESSION['login_fail']); ?>
+
+				<form action="signin.php" method="POST">
 		      		<div class="form-group">
 		      			<label class="small mb-1" for="inputEmailAddress">Email</label>
 		      			<input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" name="email" />
