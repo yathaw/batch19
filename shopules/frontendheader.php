@@ -1,5 +1,6 @@
 <?php 
 	require 'db_connect.php';
+	session_start();
 
 	$sql = "SELECT * FROM categories ORDER BY id DESC";
     $stmt = $conn->prepare($sql);
@@ -89,7 +90,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4 col-10">
-						<a href="" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> Login | Sign-up </a>
+						<a href="login.php" class="d-xl-block d-lg-block d-md-block d-none  text-decoration-none loginLink float-right"> Login | Sign-up </a>
 
 						
 					</div>
