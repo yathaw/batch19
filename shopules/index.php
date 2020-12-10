@@ -104,7 +104,11 @@
 									</ul>
 								</div>
 
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
+								<a href="javascript:void(0)" class="addtocartBtn text-decoration-none" data-id ="<?= $di_id ?>" data-name="<?= $di_name ?>"
+								data-codeno="<?= $di_codeno ?>"
+								data-photo="<?= $di_photo ?>"
+								data-price="<?= $di_price ?>"
+								data-discount="<?= $di_discount ?>">Add to Cart</a>
 
 		                    </div>
 		                </div>
@@ -170,7 +174,11 @@
 									</ul>
 								</div>
 
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
+								<a href="javascript:void(0)" class="addtocartBtn text-decoration-none" data-id ="<?= $hi_id ?>" data-name="<?= $hi_name ?>"
+								data-codeno="<?= $hi_codeno ?>"
+								data-photo="<?= $hi_photo ?>"
+								data-price="<?= $hi_price ?>"
+								data-discount="<?= $hi_discount ?>">Add to Cart</a>
 
 		                    </div>
 		                </div>
@@ -242,7 +250,11 @@
 									</ul>
 								</div>
 
-								<a href="#" class="addtocartBtn text-decoration-none">Add to Cart</a>
+								<a href="#" class="addtocartBtn text-decoration-none" data-id ="<?= $ri_id ?>" data-name="<?= $ri_name ?>"
+								data-codeno="<?= $ri_codeno ?>"
+								data-photo="<?= $ri_photo ?>"
+								data-price="<?= $ri_price ?>"
+								data-discount="<?= $ri_discount ?>">Add to Cart</a>
 
 		                    </div>
 		                </div>
@@ -266,59 +278,26 @@
 
 	    <!-- Brand Store Item -->
 	    <section class="customer-logos slider mt-5">
+	    	<?php 
+				$sql = "SELECT * FROM brands ORDER BY name ASC";
+			    $stmt = $conn->prepare($sql);
+			    $stmt->execute();
+
+			    $brands = $stmt->fetchAll();
+
+			    foreach($brands as $brand):
+			    $bid = $brand['id'];
+			    $bname = $brand['name'];
+			    $blogo = $brand['logo'];
+			?>
 	      	<div class="slide">
-	      		<a href="">
-		      		<img src="image/brand/loacker_logo.jpg">
+	      		<a href="brand.php?id=<?= $bid ?>">
+		      		<img src="<?= $blogo ?>">
 		      	</a>
 	      	</div>
+
+	      <?php endforeach; ?>
 	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/lockandlock_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/apple_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/giordano_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/saisai_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/brands_logo.png">
-	      		</a>	
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/acer_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/bella_logo.png">
-	      		</a>
-	      	</div>
-	      	
-	      	<div class="slide">
-	      		<a href="">
-	      			<img src="image/brand/ariel_logo.png">
-	      		</a>
-	      	</div>
 	   	</section>
 
 	    <div class="whitespace d-xl-block d-lg-block d-md-none d-sm-none d-none"></div>

@@ -1,4 +1,17 @@
-<?= session_start(); ?>
+<?= 
+    session_start(); 
+    // Rule1: Session ရှိမှ ၀င်ခွင့်ပေးမယ်
+    if (!isset($_SESSION['login_user'])) {
+        header('location:login.php');
+    }
+
+    // Rule2: Login User က Admin Role ဖြစ်မှပဲ Backend ကို ထိလို့ရမယ်
+    if (isset($_SESSION['login_user'])) {
+        if ($_SESSION['login_user']['rolename'] == "customer") {
+            header('location:index.php');
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -102,7 +115,7 @@
                 </li>
 
                 <li>
-                    <a class="app-menu__item" href="dashboard.html">
+                    <a class="app-menu__item" href="order_list.php">
                         <i class="app-menu__icon icofont-prestashop"></i>
                         <span class="app-menu__label">
                             Order

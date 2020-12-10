@@ -137,20 +137,20 @@
 					<i class="icofont-search"></i>
 				</div>
 
-				<a href="" class="text-decoration-none d-xl-inline d-lg-inline d-md-inline d-sm-none d-none shoppingcartLink"> 
+				<a href="cart.php" class="text-decoration-none d-xl-inline d-lg-inline d-md-inline d-sm-none d-none shoppingcartLink"> 
 					<i class="icofont-shopping-cart"></i> 
-					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti"> 1 </span>
-					<span> 4,800 Ks </span>
+					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti"> </span>
+					<span class="cartTotal"> </span>
 				</a>
 
-				<a href="" class="text-decoration-none d-xl-none d-lg-none d-md-none d-sm-inline-block d-inline-block shoppingcartLink"> 
+				<a href="cart.php" class="text-decoration-none d-xl-none d-lg-none d-md-none d-sm-inline-block d-inline-block shoppingcartLink"> 
 					<i class="icofont-shopping-cart"></i>
-					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti"> 1 </span>
+					<span class="badge badge-pill badge-light badge-notify cartNotistyle cartNoti"> </span>
 				</a>
 
 				<!-- App Download -->
 
-				<img src="image/download.png" class="img-fluid d-xl-inline d-lg-inline d-md-none d-sm-none d-none" style="width: 150px">
+				<img src="frontend/image/download.png" class="img-fluid d-xl-inline d-lg-inline d-md-none d-sm-none d-none" style="width: 150px">
 			</div>
 		</div>
 	</div>
